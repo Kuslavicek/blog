@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    form{
+        text-align:right;
+    }
+</style>
+<body>
+<h1>Hlavní strana</h1>
+
+<a href="/login" method="get">
+    <input type="button" value="Přihlásit se"/>
+</a>
+<a href="/register" method="get">
+    <input type="button" value="Registrovat se"/>
+</a>
+
+
+<form action="#" th:action="@{/search}", method="post">
+    <input type="search" name="searchField" id="searchField" th:value="${searchField}"></input>
+    <input type="submit" value="Hledat"></input>
+</form>
+
+
+<a href="/profile" method="get">
+    <input type="button" value="Profil"/>
+</a>
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+services:
+  mongo-db:
+    image: mongo
+    container_name: mongoDB
+    ports:
+      - "27017:27017"
+
+  mongo-seed:
+    container_name: mongoSeed
+    build: ./mongo-seed
+    depends_on:
+      - mongo-db
+
+  blog:
+    image: image-app
+    container_name: blog_page
+    ports:
+      - "8080:8080"
+
+
+

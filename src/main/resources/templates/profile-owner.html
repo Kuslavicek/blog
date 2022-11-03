@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${author.name}"></title>
+</head>
+<body>
+<h3 th:text="${author.name}"></h3>
+<div th:each="post : ${posts}">
+    <a th:href="@{'/post/'+${post.id}}" th:text="${post.title}"></a>
+    <a th:href="@{'/delete-article/'+${post.id}}">-</a>
+</div>
+<a href="/post-article" method="get">
+    <input type="button" value="Nový článek"/>
+</a>
+<a href="/" method="get">
+    <input type="button" value="Hlavní stránka"/>
+</a>
+</body>
+</html>

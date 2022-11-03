@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Admin",
+    "hashedPasswd": "$2a$05$g5zSZn8vENr/cscXgFblKeHLVjJSO7yVAaPANlg3XM.PZwDSjRg6C",
+    "rights": "ADMIN",
+    "_class": "com.example.blog.data.Author"
+  }
+]
