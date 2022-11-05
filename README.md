@@ -7,9 +7,12 @@
 Spring boot blog app
 ## Technologies
 spring-boot:2.7.3
+
 spring-boot-security:2.7.4
+
 mongoDB
-spring -boot-thymeleaf:2.7.3
+
+spring-boot-thymeleaf:2.7.3
 ## Deployment
 ```
 cd blog
