@@ -16,6 +16,7 @@ spring-boot-thymeleaf:2.7.3
 ## Deployment
 ```
 cd blog
+gradlew build
 docker build -t blog-image .
 docker-compose up
 ```
