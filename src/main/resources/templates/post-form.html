@@ -5,11 +5,36 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    input[type=button]{
+        margin-top: 10px;
+    }
+    textarea{
+        padding:5px;
+        width:100%;
+        margin:10px;
+        margin-left:0px;
+        height:500px;
+    }
+    input[type=text]{
+        width:80%;
+    }
+</style>
 <body>
 <form action="#" th:action="@{/post-article}" th:object="${postForm}" method="post">
-    <input type="text" th:field="*{title}"></input>
-    <textarea th:field="*{text}"></textarea>
+    <input type="text" th:field="*{title}" placeholder="Titulek"></input>
+
+    <textarea th:field="*{text}", placeholder="Text"></textarea>
+
     <input type="submit" value="Potvrdit"></input>
 </form>
+
+
+<a href="/profile" method="get">
+    <input type="button" value="Zpátky"/>
+</a>
 </body>
 </html>

@@ -7,8 +7,10 @@
 </head>
 <body>
 <h1 th:text="${post.title}"></h1>
-<p>Posted by<span th:text="${author.name}"/></p>
-<p>Posted <span th:text="${post.date}"/></p>
+
+<p>Posted by <span th:text="${author.name}"/></p>
+<p>Posted at <span th:text="${post.date}"/></p>
+
 <div th:text="${post.content}"></div>
 
 </body>
