@@ -176,6 +176,13 @@ public class MainController {
     }
 
 
+    @RequestMapping("/log-out")
+    public String logoutRequest(){
+        rightsService.setAdmin(false);
+        rightsService.setUser(false);
+        rightsService.setAuthor(null);
+        return "redirect:/";
+    }
 
 
 

@@ -12,7 +12,7 @@ services:
       - mongo-db
 
   blog:
-    image: image-app
+    image: blog-app
     container_name: blog_page
     ports:
       - "8080:8080"
